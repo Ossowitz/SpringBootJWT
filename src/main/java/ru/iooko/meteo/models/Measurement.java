@@ -11,10 +11,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Measurement")
-@Getter
-@Setter
 public class Measurement {
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,4 +35,10 @@ public class Measurement {
     @ManyToOne
     @JoinColumn(name = "sensor", referencedColumnName = "name")
     private Sensor sensor;
+
+    // Jackson смотрит на название геттера, отсекает is и оставляет название поля
+    // Jackson работает не с полями, а с геттерами и сеттерами
+    public Boolean isRaining() {
+        return isRaining;
+    }
 }
