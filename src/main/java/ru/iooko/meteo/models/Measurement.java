@@ -28,7 +28,7 @@ public class Measurement {
 
     @Column(name = "raining")
     @NotNull
-    private Boolean raining;
+    private Boolean isRaining;
 
     @Column(name = "measurement_date_time")
     @NotNull
