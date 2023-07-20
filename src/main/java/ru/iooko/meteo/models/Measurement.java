@@ -11,6 +11,8 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Measurement")
+@Getter
+@Setter
 public class Measurement {
     @Id
     @Column(name = "id")
@@ -25,7 +27,7 @@ public class Measurement {
 
     @Column(name = "raining")
     @NotNull
-    private Boolean isRaining;
+    private Boolean raining;
 
     @Column(name = "measurement_date_time")
     @NotNull
@@ -39,6 +41,6 @@ public class Measurement {
     // Jackson смотрит на название геттера, отсекает is и оставляет название поля
     // Jackson работает не с полями, а с геттерами и сеттерами
     public Boolean isRaining() {
-        return isRaining;
+        return raining;
     }
 }
