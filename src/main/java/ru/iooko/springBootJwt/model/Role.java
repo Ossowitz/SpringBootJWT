@@ -1,4 +1,4 @@
-package ru.iooko.springBootJwt.models;
+package ru.iooko.springBootJwt.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

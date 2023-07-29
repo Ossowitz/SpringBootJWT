@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.iooko.springBootJwt.models.User;
+import ru.iooko.springBootJwt.model.User;
 import ru.iooko.springBootJwt.repository.UserRepository;
 
 @Service

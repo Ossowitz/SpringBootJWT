@@ -1,4 +1,4 @@
-package ru.iooko.springBootJwt.models;
+package ru.iooko.springBootJwt.model;
 
 public enum ERole {
     ROLE_USER,

@@ -2,7 +2,7 @@ package ru.iooko.springBootJwt.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.iooko.springBootJwt.models.User;
+import ru.iooko.springBootJwt.model.User;
 
 import java.util.Optional;
 

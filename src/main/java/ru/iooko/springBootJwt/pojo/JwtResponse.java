@@ -1,7 +1,7 @@
 package ru.iooko.springBootJwt.pojo;
 
 import lombok.Data;
-import ru.iooko.springBootJwt.models.Role;
+import ru.iooko.springBootJwt.model.Role;
 
 import java.util.Set;
 
