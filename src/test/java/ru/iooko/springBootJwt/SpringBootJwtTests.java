@@ -1,10 +1,10 @@
-package ru.iooko.meteo;
+package ru.iooko.springBootJwt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HighPrecisionMeteorologicalSensorApplicationTests {
+class SpringBootJwtTests {
 
 	@Test
 	void contextLoads() {
