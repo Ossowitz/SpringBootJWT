@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/feedbacker
+    url: jdbc:postgresql://localhost:5433/feedbaker
     username: postgres
     password: pass
   # Hibernate ddl auto (create, create-drop, validate, update)
