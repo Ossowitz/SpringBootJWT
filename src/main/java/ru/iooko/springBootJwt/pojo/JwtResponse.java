@@ -3,7 +3,7 @@ package ru.iooko.springBootJwt.pojo;
 import lombok.Data;
 import ru.iooko.springBootJwt.model.Role;
 
-import java.util.Set;
+import java.util.List;
 
 @Data
 public class JwtResponse {
@@ -18,13 +18,13 @@ public class JwtResponse {
 
     private String type = "Bearer";
 
-    private Set<Role> roles;
+    private List<String> roles;
 
-    public JwtResponse(Long id, String username, String email, String type, Set<Role> roles) {
+    public JwtResponse(String token, Long id, String username, String email, List<String> roles) {
+        this.token = token;
         this.id = id;
         this.username = username;
         this.email = email;
-        this.type = type;
         this.roles = roles;
     }
 }
